@@ -1,26 +1,68 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
+  --font-sans: var(--font-inter);
+  --color-background: var(--bg-0);
+  --color-foreground: var(--text-100);
+  --radius-lg: var(--radius);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --bg-0: #09090b;
+  --bg-100: #18181b;
+  --bg-200: #27272a;
+  --bg-300: #3f3f46;
+  --text-100: #fafafa;
+  --text-200: #e4e4e7;
+  --text-300: #a1a1aa;
+  --text-400: #71717a;
+  --radius: 0.5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg-0);
+  color: var(--text-100);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroBgZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-fade-slide-in-1 {
+  animation: fadeSlideIn 0.6s ease-out 0.1s both;
+}
+
+.animate-fade-slide-in-2 {
+  animation: fadeSlideIn 0.6s ease-out 0.2s both;
+}
+
+.animate-fade-slide-in-3 {
+  animation: fadeSlideIn 0.6s ease-out 0.3s both;
+}
+
+.animate-fade-slide-in-4 {
+  animation: fadeSlideIn 0.6s ease-out 0.4s both;
+}
+
+.animate-hero-bg {
+  animation: heroBgZoom 24s ease-in-out infinite alternate;
 }
