@@ -17,8 +17,10 @@ Pick **GitHub.com** → **HTTPS** → **Login with a web browser**. Copy the cod
 ```bash
 cd "/Users/niklaskennedy/Desktop/navNote - dev/mind-inc-site"
 
-gh repo create navNoteUSA/mind-inc-site --private --source=. --remote=origin --push
+gh repo create navNoteUSA/mind-inc-site --public --source=. --remote=origin --push
 ```
+
+(If the repo already exists as private: **Settings → General** → scroll to "Danger Zone" → **Change visibility** → **Make public**.)
 
 ---
 
