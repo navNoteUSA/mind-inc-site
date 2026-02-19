@@ -1,4 +1,4 @@
-import { ArrowUpRight, Building2, Radar, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import ResponsiveHeroBanner from "@/components/ui/responsive-hero-banner";
 
 const industries = [
@@ -12,17 +12,14 @@ const industries = [
 
 const capabilities = [
   {
-    icon: Radar,
     title: "Context Layer",
     copy: "Voice, vision, location, and activity become one live operational signal.",
   },
   {
-    icon: Sparkles,
     title: "Agentic Guidance",
     copy: "AI agents observe, reason, and guide actions while work is happening.",
   },
   {
-    icon: Building2,
     title: "Leadership Control",
     copy: "Distributed teams gain predictive control with real-time visibility.",
   },
@@ -48,94 +45,89 @@ export default function Home() {
         ]}
       />
 
-      <section id="platform" className="mx-auto grid max-w-7xl gap-16 px-6 py-28 md:grid-cols-2 md:gap-20">
-        <div>
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#71717a]">
-            Platform Thesis
-          </p>
-          <h2 className="mt-5 font-serif text-4xl font-normal leading-[1.15] text-white md:text-5xl">
+      <section id="platform" className="mx-auto max-w-7xl px-6 py-32 md:py-40">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="font-serif text-4xl font-normal leading-[1.15] text-white md:text-5xl lg:text-6xl">
             A second brain for physical operations.
           </h2>
-          <p className="mt-6 max-w-lg text-[17px] leading-relaxed text-[#a1a1aa]">
+          <p className="mt-8 max-w-2xl text-lg leading-[1.7] text-[#a1a1aa]">
             Software that only plans work leaves teams blind in execution. Mind AI closes that gap by
             continuously reasoning over what is happening in the field and coordinating action in
             the moment.
           </p>
         </div>
-        <div className="grid gap-4">
+        <div className="mx-auto mt-24 grid max-w-3xl gap-16 md:grid-cols-3">
           {capabilities.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-xl border border-white/[0.08] bg-white/[0.02] p-6 transition-colors hover:border-white/15"
-            >
-              <item.icon className="h-5 w-5 text-white/80" />
-              <h3 className="mt-5 text-lg font-medium text-white">{item.title}</h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-[#a1a1aa]">{item.copy}</p>
-            </article>
+            <div key={item.title} className="border-l border-white/10 pl-8">
+              <h3 className="text-base font-medium tracking-tight text-white">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-[15px] leading-[1.6] text-[#71717a]">
+                {item.copy}
+              </p>
+            </div>
           ))}
         </div>
       </section>
 
-      <section id="industries" className="mx-auto max-w-7xl px-6 pb-28">
-        <div className="rounded-2xl border border-white/[0.08] bg-[#0c0c0e] p-10 md:p-14">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#71717a]">Industries</p>
-          <h2 className="mt-5 max-w-2xl font-serif text-3xl font-normal leading-tight text-white md:text-4xl">
-            One architecture. Multiple verticals. Same operational intelligence core.
-          </h2>
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {industries.map((industry) => (
-              <div
-                key={industry}
-                className="rounded-lg border border-white/[0.06] bg-white/[0.02] px-5 py-3.5 text-[15px] text-[#e4e4e7]"
+      <section id="industries" className="border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 py-32 md:py-40">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-serif text-4xl font-normal leading-[1.15] text-white md:text-5xl lg:text-6xl">
+              One architecture. Multiple verticals.
+            </h2>
+            <p className="mt-8 text-lg leading-[1.7] text-[#a1a1aa]">
+              Same operational intelligence core across retail, construction, door-to-door sales,
+              real estate, supply chain, and warehouse operations.
+            </p>
+            <ul className="mt-12 flex flex-wrap gap-x-8 gap-y-2 text-[15px] text-[#71717a]">
+              {industries.map((industry) => (
+                <li key={industry}>{industry}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" className="border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 py-32 md:py-40">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-serif text-4xl font-normal leading-[1.15] text-white md:text-5xl lg:text-6xl">
+              Built and proven in live field operations.
+            </h2>
+            <p className="mt-8 text-lg leading-[1.7] text-[#a1a1aa]">
+              Our first vertical—retail execution—validated the architecture across frontline
+              workflows. The platform now expands to construction, real estate, supply chain, and
+              warehouse operations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
+            <div>
+              <a
+                href="https://www.mind-inc.io"
+                className="font-serif text-2xl font-normal text-white md:text-3xl hover:underline"
               >
-                {industry}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="products" className="mx-auto max-w-7xl px-6 pb-28">
-        <div className="rounded-2xl border border-white/[0.08] bg-white/[0.02] p-10 md:p-14">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#71717a]">
-            Products
-          </p>
-          <h2 className="mt-5 max-w-2xl font-serif text-3xl font-normal leading-tight text-white md:text-4xl">
-            Built and proven in live field operations.
-          </h2>
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-[#a1a1aa]">
-            Our first vertical—retail execution—validated the architecture across frontline workflows.
-            The platform now expands to construction, real estate, supply chain, and warehouse
-            operations.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" className="border-t border-white/[0.08]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-10 px-6 py-20 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#71717a]">
-              Mind AI Inc.
-            </p>
+                www.mind-inc.io
+              </a>
+              <p className="mt-4 text-[15px] text-[#71717a]">
+                Flatiron District, Manhattan
+                <br />
+                Technology office in Provo, Utah
+              </p>
+            </div>
             <a
-              href="https://www.mind-inc.io"
-              className="mt-3 block font-serif text-2xl font-normal text-white md:text-3xl hover:underline"
+              href="mailto:contact@mind-inc.io"
+              className="inline-flex w-fit items-center gap-2 text-[15px] font-medium text-white hover:text-white/80 transition-colors"
             >
-              www.mind-inc.io
+              contact@mind-inc.io
+              <ArrowUpRight className="h-4 w-4" />
             </a>
-            <p className="mt-4 text-[15px] leading-relaxed text-[#a1a1aa]">
-              Flatiron District, Manhattan, New York
-              <br />
-              Technology office in Provo, Utah
-            </p>
           </div>
-          <a
-            href="mailto:contact@mind-inc.io"
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition-colors hover:bg-white/90"
-          >
-            contact@mind-inc.io
-            <ArrowUpRight className="h-4 w-4" />
-          </a>
         </div>
       </section>
     </main>
