@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.mind-inc.io
+Sitemap: https://www.mind-inc.io/sitemap.xml
