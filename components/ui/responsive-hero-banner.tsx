@@ -76,7 +76,7 @@ const ResponsiveHeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
               <img
                 src={logoUrl}
                 alt="Mind AI Inc."
-                className="h-8 w-auto md:h-9"
+                className="h-10 w-auto md:h-14"
               />
             ) : (
               <span className="font-serif text-lg font-normal tracking-tight text-white">

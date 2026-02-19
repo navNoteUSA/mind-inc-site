@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main className="bg-[#09090b] text-[#fafafa]">
       <ResponsiveHeroBanner
-        logoUrl="/logo.png"
+        logoUrl="/logo-transparent.png"
         backgroundImageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=80"
         badgeLabel="Platform"
         badgeText="AI-native operations for the physical world"
@@ -109,9 +109,16 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-24">
           <div className="flex flex-col gap-12 md:flex-row md:items-end md:justify-between">
             <div>
+              <a href="/" className="block">
+                <img
+                  src="/logo-transparent.png"
+                  alt="Mind AI Inc."
+                  className="h-10 w-auto md:h-12"
+                />
+              </a>
               <a
                 href="https://www.mind-inc.io"
-                className="font-serif text-2xl font-normal text-white md:text-3xl hover:underline"
+                className="mt-6 block font-serif text-2xl font-normal text-white md:text-3xl hover:underline"
               >
                 www.mind-inc.io
               </a>
