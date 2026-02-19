@@ -26,10 +26,11 @@ gh repo create navNoteUSA/mind-inc-site --public --source=. --remote=origin --pu
 
 ## Step 3: Turn on GitHub Pages
 
-1. Open: **https://github.com/navNoteUSA/mind-inc-site**
-2. **Settings** → **Pages**
-3. Under "Build and deployment":
-   - Source: **GitHub Actions**
+1. Open: **https://github.com/navNoteUSA/mind-inc-site/settings/pages**
+2. Under **Build and deployment**:
+   - **Source**: Deploy from a branch
+   - **Branch**: gh-pages, **Folder**: / (root)
+   - Click **Save**
 
 ---
 
