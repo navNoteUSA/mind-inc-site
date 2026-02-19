@@ -69,16 +69,19 @@ const ResponsiveHeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 pt-6">
           <Link
             href="/"
-            className="font-serif text-lg font-normal tracking-tight text-white"
+            className="flex items-center"
             aria-label="Mind AI Inc. home"
           >
             {logoUrl ? (
-              <span
-                className="inline-flex h-9 w-9 rounded-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${logoUrl})` }}
+              <img
+                src={logoUrl}
+                alt="Mind AI Inc."
+                className="h-8 w-auto md:h-9"
               />
             ) : (
-              "Mind AI Inc."
+              <span className="font-serif text-lg font-normal tracking-tight text-white">
+                Mind AI Inc.
+              </span>
             )}
           </Link>
 

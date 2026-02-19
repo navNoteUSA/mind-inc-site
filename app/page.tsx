@@ -29,6 +29,7 @@ export default function Home() {
   return (
     <main className="bg-[#09090b] text-[#fafafa]">
       <ResponsiveHeroBanner
+        logoUrl="/logo.png"
         backgroundImageUrl="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2200&q=80"
         badgeLabel="Platform"
         badgeText="AI-native operations for the physical world"
