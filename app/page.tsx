@@ -113,7 +113,7 @@ export default function Home() {
                 <img
                   src="/logo-transparent.png"
                   alt="Mind AI Inc."
-                  className="h-10 w-auto md:h-12"
+                  className="h-[7.5rem] w-auto md:h-36"
                 />
               </a>
               <a

@@ -76,7 +76,7 @@ const ResponsiveHeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
               <img
                 src={logoUrl}
                 alt="Mind AI Inc."
-                className="h-10 w-auto md:h-14"
+                className="h-[7.5rem] w-auto md:h-[10.5rem]"
               />
             ) : (
               <span className="font-serif text-lg font-normal tracking-tight text-white">
@@ -136,7 +136,7 @@ const ResponsiveHeroBanner: React.FC<ResponsiveHeroBannerProps> = ({
             <span className="text-sm text-white/60">{badgeText}</span>
           </div>
 
-          <h1 className="animate-fade-slide-in-2 font-serif text-4xl font-normal leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="animate-fade-slide-in-2 font-spectre text-4xl font-medium leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             {title}
             <br className="hidden sm:block" />
             {titleLine2}

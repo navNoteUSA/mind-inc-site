@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/spectre");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -65,4 +66,8 @@ body {
 
 .animate-hero-bg {
   animation: heroBgZoom 24s ease-in-out infinite alternate;
+}
+
+.font-spectre {
+  font-family: "Spectre", sans-serif;
 }
