@@ -37,7 +37,7 @@ export default function Home() {
         titleLine2="The intelligence layer for physical operations."
         description="Mind AI unifies voice, vision, location, and activity into real-time operational intelligence. From stores to job sites to warehouses, field activity becomes coordinated action."
         primaryButtonText="Get in touch"
-        primaryButtonHref="#contact"
+        primaryButtonHref="https://navnote.net/contact"
         navLinks={[
           { label: "Platform", href: "#platform", isActive: true },
           { label: "Industries", href: "#industries" },
