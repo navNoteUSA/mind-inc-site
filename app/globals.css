@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/spectre");
+@import url("https://fonts.cdnfonts.com/css/the-spectre");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -69,5 +69,5 @@ body {
 }
 
 .font-spectre {
-  font-family: "Spectre", sans-serif;
+  font-family: "The Spectre", sans-serif;
 }
