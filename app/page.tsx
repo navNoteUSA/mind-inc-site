@@ -35,14 +35,14 @@ export default function Home() {
         badgeText="AI-native operations for the physical world"
         title="Mind AI Inc."
         titleLine2="The intelligence layer for physical operations."
-        description="Mind AI unifies voice, vision, location, and activity into real-time operational intelligence. From stores to job sites to warehouses—field activity becomes coordinated action."
+        description="Mind AI unifies voice, vision, location, and activity into real-time operational intelligence. From stores to job sites to warehouses, field activity becomes coordinated action."
         primaryButtonText="Get in touch"
         primaryButtonHref="#contact"
         navLinks={[
           { label: "Platform", href: "#platform", isActive: true },
           { label: "Industries", href: "#industries" },
-          { label: "Products", href: "#products" },
-          { label: "Contact", href: "#contact" },
+          { label: "Products", href: "https://navnote.net/product", isActive: false },
+          { label: "Contact", href: "https://navnote.net/contact", isActive: false },
         ]}
       />
 
@@ -97,7 +97,7 @@ export default function Home() {
               Built and proven in live field operations.
             </h2>
             <p className="mt-8 text-lg leading-[1.7] text-[#a1a1aa]">
-              Our first vertical—retail execution—validated the architecture across frontline
+              Our first vertical, retail execution, validated the architecture across frontline
               workflows. The platform now expands to construction, real estate, supply chain, and
               warehouse operations.
             </p>
