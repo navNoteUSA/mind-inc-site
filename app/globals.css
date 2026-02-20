@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -68,5 +69,5 @@ body {
 }
 
 .font-spectre {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
 }
